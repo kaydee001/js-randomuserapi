@@ -2,7 +2,7 @@ const formatDate = (isoDate) => {
   return new Date(isoDate).toLocaleDateString("en-GB");
 };
 
-const getJoke = async () => {
+const getData = async () => {
   try {
     const response = await fetch("https://randomuser.me/api/");
     const json = await response.json();
@@ -66,4 +66,4 @@ const getJoke = async () => {
     console.log(err);
   }
 };
-document.querySelector(".btn").addEventListener("click", getJoke);
+document.querySelector(".btn").addEventListener("click", getData);
