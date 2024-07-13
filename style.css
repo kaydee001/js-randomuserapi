@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: Nunito;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.id-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* Adjust as needed */
+  margin-bottom: 20px; /* Spacing between ID card and button */
+}
+
+.id-card {
+  width: calc(50% - 10px); /* Adjust width to fit two cards with spacing */
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+}
+
+.front {
+  background-color: #fff;
+}
+
+.back {
+  background-color: #f0f0f0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.id,
+.doj,
+.back p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 150px; /* Adjust button width */
+  margin: 25px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade of primary color on hover */
+}
